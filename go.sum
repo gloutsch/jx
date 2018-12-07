@@ -367,7 +367,7 @@ github.com/hashicorp/go-plugin v0.0.0-20190129155509-362c99b11937 h1:F3biNWiyQYD
 github.com/hashicorp/go-plugin v0.0.0-20190129155509-362c99b11937/go.mod h1:++UyYGoz3o5w9ZzAdZxtQKrWWP+iqPBn3cQptSMzBuY=
 github.com/hashicorp/go-retryablehttp v0.0.0-20180718195005-e651d75abec6 h1:qCv4319q2q7XKn0MQbi8p37hsJ+9Xo8e6yojA73JVxk=
 github.com/hashicorp/go-retryablehttp v0.0.0-20180718195005-e651d75abec6/go.mod h1:fXcdFsQoipQa7mwORhKad5jmDCeSy/RCGzWA08PO0lM=
-github.com/hashicorp/go-rootcerts v0.0.0-20160503143440-6bb64b370b90 h1:VBj0QYQ0u2MCJzBfeYXGexnAl17GsH1yidnoxCqqD9E=
+github.com/hashicorp/go-rootcerts v0.0.0-20160503143440-6bb64b370b90 h1:9HVkPxOpo+yO93Ah4yrO67d/qh0fbLLWbKqhYjyHq9A=
 github.com/hashicorp/go-rootcerts v0.0.0-20160503143440-6bb64b370b90/go.mod h1:o4zcYY1e0GEZI6eSEr+43QDYmuGglw1qSO6qdHUHCgg=
 github.com/hashicorp/go-sockaddr v0.0.0-20180320115054-6d291a969b86 h1:7YOlAIO2YWnJZkQp7B5eFykaIY7C9JndqAFQyVV5BhM=
 github.com/hashicorp/go-sockaddr v0.0.0-20180320115054-6d291a969b86/go.mod h1:7Xibr9yA9JjQq1JpNB2Vw7kxv8xerXegt+ozgdvDeDU=
@@ -746,7 +746,7 @@ github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8/go.mod h1:VFNgLljT
 github.com/ulikunitz/xz v0.5.6 h1:jGHAfXawEGZQ3blwU5wnWKQJvAraT7Ftq9EXjnXYgt8=
 github.com/ulikunitz/xz v0.5.6/go.mod h1:2bypXElzHzzJZwzH67Y6wb67pO62Rzfn7BSiF4ABRW8=
 github.com/urfave/cli v1.18.0/go.mod h1:70zkFmudgCuE/ngEzBv17Jvp/497gISqfk5gWijbERA=
-github.com/viniciuschiele/tarx v0.0.0-20151205142357-6e3da540444d h1:Z8Bp/K+wf1+IUvu5Vk2Ml/mMI7fmZTT7rQjkLC8pAmQ=
+github.com/viniciuschiele/tarx v0.0.0-20151205142357-6e3da540444d h1:OECick7XFsvL2Uo+V1zxR7LM0xPG3yzGfkOrq1WIIMM=
 github.com/viniciuschiele/tarx v0.0.0-20151205142357-6e3da540444d/go.mod h1:8uo3DXfN526YN7JjAp4JkOMm4foTW4vPzPHaAzb4xiY=
 github.com/wbrefvem/go-bitbucket v0.0.0-20180917214347-1c96061fe622 h1:WcLZkGZhzEP2p+P/DZuCw+0yvB8rFe9KemRsegMt0kk=
 github.com/wbrefvem/go-bitbucket v0.0.0-20180917214347-1c96061fe622/go.mod h1:Z91j2jYBApRjJ0zlXDCxPrrZR8ohkkd4g0n+Hqs1w0Q=
@@ -968,7 +968,7 @@ k8s.io/code-generator v0.0.0-20181017053441-8c97d6ab64da/go.mod h1:MYiN+ZJZ9HkET
 k8s.io/gengo v0.0.0-20180130054752-8394c995ab8f/go.mod h1:ezvh/TsK7cY6rbqRK0oQQ8IAqLxYwwyPxAX1Pzy0ii0=
 k8s.io/gengo v0.0.0-20180718083919-906d99f89cd6 h1:24nBVU2mLTluInk9yc+UzGJbjQj/Ment+BZdS0Sjqxs=
 k8s.io/gengo v0.0.0-20180718083919-906d99f89cd6/go.mod h1:ezvh/TsK7cY6rbqRK0oQQ8IAqLxYwwyPxAX1Pzy0ii0=
-k8s.io/helm v2.7.2+incompatible h1:Ktyz7rtoVmnBHH9hLl/PFJgnpEKZguhIOFumbR40elQ=
+k8s.io/helm v2.7.2+incompatible h1:WY8CVrvpd83Z0WdzDgl0GoIS0aP3o84zGulDOA4CRo8=
 k8s.io/helm v2.7.2+incompatible/go.mod h1:LZzlS4LQBHfciFOurYBFkCMTaZ0D1l+p0teMg7TSULI=
 k8s.io/klog v0.1.0/go.mod h1:Gq+BEi5rUBO/HRz0bTSXDUcqjScdoY3a9IHpCEIOOfk=
 k8s.io/kube-openapi v0.0.0-20171101183504-39a7bf85c140/go.mod h1:BXM9ceUBTj2QnfH2MK1odQs778ajze1RxcmP6S8RVVc=

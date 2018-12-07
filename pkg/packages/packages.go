@@ -16,7 +16,7 @@ import (
 )
 
 const IBMCloudVersion = "0.10.1"
-const HeptioAuthenticatorAwsVersion = "1.10.3"
+const AwsIamAuthenticatorVersion = "1.12.7"
 const KubectlVersion = "1.13.2"
 
 func BinaryWithExtension(binary string) string {

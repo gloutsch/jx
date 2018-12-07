@@ -25,7 +25,7 @@ type GetEksOptions struct {
 
 var (
 	getEksLong = templates.LongDesc(`
-		Display one or many EKS cluster resources 
+		Display one or many EKS cluster resources
 `)
 
 	getEksExample = templates.Examples(`
@@ -72,7 +72,7 @@ func (o *GetEksOptions) Run() error {
 		if d != "" {
 			deps = append(deps, d)
 		}
-		d = opts.BinaryShouldBeInstalled("heptio-authenticator-aws")
+		d = opts.BinaryShouldBeInstalled("aws-iam-authenticator")
 		if d != "" {
 			deps = append(deps, d)
 		}

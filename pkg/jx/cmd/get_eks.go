@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"encoding/json"
 	"fmt"
 	"os"
 	"os/exec"
@@ -35,8 +36,8 @@ var (
 		# Displays someCluster EKS resource
 		jx get eks someCluster
 
-		# Displays someCluster resource in YAML format
-		jx get eks someCluster -oyaml
+		# Displays someCluster worker nodes in specified format (yaml, json)
+		jx get eks someCluster -o yaml
 	`)
 )
 
@@ -119,6 +120,12 @@ func (o *GetEksOptions) Run() error {
 			fmt.Println(cluster)
 		} else if o.Output == "yaml" {
 			reservations, err := yaml.Marshal(instances.Reservations)
+			if err != nil {
+				return err
+			}
+			fmt.Println(string(reservations))
+		} else if o.Output == "json" {
+			reservations, err := json.Marshal(instances.Reservations)
 			if err != nil {
 				return err
 			}

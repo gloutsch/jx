@@ -51,7 +51,7 @@ var (
 `)
 
 	createClusterEKSExample = templates.Examples(`
-        # to create a new Kubernetes cluster with Jenkins X in your default zones (from $EKS_AVAILABILITY_ZONES)
+	# to create a new Kubernetes cluster with Jenkins X in your default zones (from $EKS_AVAILABILITY_ZONES)
 		jx create cluster eks
 
 		# to specify the zones
@@ -108,7 +108,7 @@ func (o *CreateClusterEKSOptions) Run() error {
 	if d != "" {
 		deps = append(deps, d)
 	}
-	d = opts.BinaryShouldBeInstalled("heptio-authenticator-aws")
+	d = opts.BinaryShouldBeInstalled("aws-iam-authenticator")
 
 	if d != "" {
 		deps = append(deps, d)
@@ -145,8 +145,8 @@ func (o *CreateClusterEKSOptions) Run() error {
 			}
 			if stackExists {
 				log.Infof(
-					`Cloud formation stack named %s exists in rollbacked state. At the same 
-time there is no EKS cluster associated with it. This usually happens when there was an error during 
+					`Cloud formation stack named %s exists in rollbacked state. At the same
+time there is no EKS cluster associated with it. This usually happens when there was an error during
 cluster provisioning. Cleaning up stack %s and recreating it with eksctl.`,
 					util.ColorInfo(amazon.EksctlStackName(flags.ClusterName)), util.ColorInfo(amazon.EksctlStackName(flags.ClusterName)))
 				err = amazon.CleanUpObsoleteEksClusterStack(flags.ClusterName, flags.Profile, flags.Region)

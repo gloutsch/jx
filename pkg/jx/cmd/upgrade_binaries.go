@@ -15,7 +15,7 @@ var (
 `)
 
 	upgradeBInariesExample = templates.Examples(`
-		# Upgrades the Jenkins X binaries (like helm or eksctl) 
+		# Upgrades the Jenkins X binaries (like helm or eksctl)
 		jx upgrade binaries
 	`)
 )
@@ -62,8 +62,8 @@ func (o *UpgradeBinariesOptions) Run() error {
 			if err != nil {
 				return err
 			}
-		} else if binary.Name() == "heptio-authenticator-aws" {
-			err = o.InstallHeptioAuthenticatorAws(true)
+		} else if binary.Name() == "aws-iam-authenticator" {
+			err = o.InstallAwsIamAuthenticator(true)
 			if err != nil {
 				return err
 			}

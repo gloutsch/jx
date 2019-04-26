@@ -104,9 +104,9 @@ func (o *GetEksOptions) Run() error {
 		instances, err := svc.DescribeInstances(&ec2.DescribeInstancesInput{
 			Filters: []*ec2.Filter{
 				{
-					Name: aws.String("tag:eksctl.cluster.k8s.io/v1alpha1/cluster-name"),
+					Name: aws.String("tag:kubernetes.io/cluster/" + cluster),
 					Values: []*string{
-						aws.String(cluster),
+						aws.String("owned"),
 					},
 				},
 			},
